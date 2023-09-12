@@ -4,8 +4,15 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        colors: {
+          papayawhip: {
+            light: '#fef4e4',
+            DEFAULT: '#ffefd5',
+            dark: '#fee5bc',
+          }
+        },
         'widescreen':{'raw':'(min-aspect-ratio: 3/2)'},
-        'tallscreen':{'raw':'(min-aspect-ratio: 13/20)'},
+        'tallscreen':{'raw':'(max-aspect-ratio: 13/20)'},
       }
     },
     keyframes: {
